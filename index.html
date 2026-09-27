@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Package Booking System</title>
+
+    <!--Jquery Mobile CSS-->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!--Page 1:Home-->
+    <div data-role="page" id="homePage">
+
+        <!--Header with Navbar-->
+        <div data-role="header">
+            <h1>Sarawak Amazing Tours</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#homePage" class="ui-btn-active" data-icon="home" data-transition="slide">Home</a></li>
+                    <li><a href="#tourpackagePage" data-icon="info" data-transition="slide">Tour Package</a></li>
+                    <li><a href="#bookingPage" data-icon="shop" data-transition="slide">Booking</a></li>
+                    <li><a href="#contactPage" data-icon="phone" data-transition="slide">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Content-->
+        <div role="main" class="ui-content">
+            <div class="home">
+                <h2>Explore Beautiful Sarawak</h2>
+                <img src="img/tour1.jpg">
+                <p>Discover the beauty of Sarawak through our exciting holiday packages.</p>
+                <p>Explore nature, culture, wildlife and amazing local attractions in Sarawak.</p>
+            </div>
+
+            <h2>What We Have Offer</h2>
+
+            <div class="package-card">
+                <img src="img/explore.jpg">
+                <h3>Explore Tour Packages</h3>
+                <p>Discover interesting tour package and beautiful destinations around Sarawak.</p>
+            </div>
+            <div class="package-card">
+                <img src="img/book.jpg">
+                <h3>Easy to booking</h3>
+                <p>Book your prefered tour packages easily via our online booking system.</p>
+            </div>
+            <div class="package-card">
+                <h3>Contact us</h3>
+                <p>Have any question? Contact us and don't be shy shy~</p>
+            </div>
+        </div>
+        <!--Footer-->
+        <div data-role="footer">
+            <h4>Sarawak Amazing Tours | &copy 2026</h4>
+        </div>
+    </div>
+
+    <!--Page 2: Tour Packages-->
+    <div data-role="page" id="tourpackagePage">
+
+        <div data-role="header" data-theme="a">
+            <a href="#homePage" data-rel="back" data-icon="arrow-l" data-iconpos="notext" data-shadow="false" data-icon-shadow="false">Back</a>
+            <h1>Our Tour packages</h1>
+            
+            <!--Header with Navbar-->
+            <h1>Sarawak Amazing Tours</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#homePage" data-icon="home" data-transition="slide">Home</a></li>
+                    <li><a href="#tourpackagePage" class="ui-btn-active" data-icon="info" data-transition="slide">Tour Package</a></li>
+                    <li><a href="#bookingPage" data-icon="shop" data-transition="slide">Booking</a></li>
+                    <li><a href="#contactPage" data-icon="phone" data-transition="slide">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Content-->
+        <div role="main" class="ui-content">
+            <h2>Our Tour Packages</h2>
+            <p>Choose your prefered destination and enjoy your trip.</p>
+
+            <ul data-role="listview">
+
+                <!-- Sarawak Cultural Village -->
+                <li>
+                    <a href="#" class="packages" id="sarawakculturalvillage"
+                    data-price="RM150 per person"
+                    data-duration="1 Day"
+                    data-activities="Cultural performance, traditional longhouse visit and cultural experience."
+                    data-facilities="Tour guide, cultural performance area and visitor facilities.">
+
+                        <img src="img/Sarawak Cultural Village.jpg" alt="sarawakculturalvillage">
+
+                        <h2>Sarawak Cultural Village <span class="tooltip">(?)</span></h2>
+
+                        <p>A 17-acre living museum featuring authentic replica longhouses representing major ethnic groups in Sarawak, complete with a popular 45-minute cultural performance.</p>
+
+                    </a>
+                </li>
+
+
+                <!-- Tropical Adventure Tours & Travel Sdn Bhd Miri -->
+                <li>
+                    <a href="#"
+                    class="packages"
+                    id="travelmiri"
+                    data-price="RM250 per person"
+                    data-duration="2 Days 1 Night"
+                    data-activities="Trekking, eco-adventure, nature exploration and outdoor activities."
+                    data-facilities="Tour guide, transportation and basic accommodation.">
+
+                        <img src="img/travel sdn bhd miri.jpg" alt="travelmiri">
+
+                        <h2>Tropical Adventure Tours & Travel Sdn Bhd Miri <span class="tooltip">(?)</span></h2>
+
+                        <p>A Miri-based travel agency offering exciting adventure and tourism experiences across Sarawak, including eco-adventures, trekking, underwater activities and nature exploration.</p>
+
+                    </a>
+                </li>
+
+
+                <!-- Lamin Dana Cultural Centre -->
+                <li>
+                    <a href="#"
+                    class="packages"
+                    id="lamindanaculturalcentre"
+                    data-price="RM100 per person"
+                    data-duration="1 Day"
+                    data-activities="Melanau cultural experience, Umai tasting and sago processing demonstration."
+                    data-facilities="Tour guide, cultural centre and traditional facilities.">
+
+                        <img src="img/Lamin Dana Cultural Centre.jpg" alt="lamindanaculturalcentre">
+
+                        <h2>Lamin Dana Cultural Centre <span class="tooltip">(?)</span></h2>
+
+                        <p>Located in Kampung Tellian, this traditional Melanau longhouse functions as a living museum where you can try Umai (a local spicy raw fish delicacy) and learn about sago processing.</p>
+
+                    </a>
+                </li>
+
+
+                <!-- Similajau National Park -->
+                <li>
+                    <a href="#"
+                    class="packages"
+                    id="nationalpark"
+                    data-price="RM180 per person"
+                    data-duration="1 Day"
+                    data-activities="Hiking, rainforest exploration, beach walk and wildlife observation."
+                    data-facilities="Parking area, picnic area, hiking trails and visitor facilities.">
+
+                        <img src="img/Similajau National Park.jpg" alt="nationalpark">
+
+                        <h2>Similajau National Park <span class="tooltip">(?)</span></h2>
+
+                        <p>Located just outside the town, this park features unique coastal rainforests, untamed golden-sand beaches, and hiking trails that hug the rocky shoreline.</p>
+
+                    </a>
+                </li>
+
+
+                <!-- Fairy Cave & Wind Cave -->
+                <li>
+                    <a href="#"
+                    class="packages"
+                    id="cave"
+                    data-price="RM120 per person"
+                    data-duration="1 Day"
+                    data-activities="Cave exploration, nature walk and photography."
+                    data-facilities="Walking trails, wooden boardwalk and visitor facilities.">
+
+                        <img src="img/Fairy Cave & Wind Cave.jpg" alt="cave">
+
+                        <h2>Fairy Cave & Wind Cave <span class="tooltip">(?)</span></h2>
+
+                        <p>Fairy Cave is a massive, multi-tiered chamber dripping with stalactites, while the nearby Wind Cave features a subterranean wooden boardwalk where you can feel continuous, cool breezes rushing through the dark.</p>
+
+                    </a>
+                </li>
+
+
+                <!-- Fort Alice -->
+                <li>
+                    <a href="#"
+                    class="packages"
+                    id="fortalice"
+                    data-price="RM80 per person"
+                    data-duration="Half Day"
+                    data-activities="Historical tour, heritage exploration and museum visit."
+                    data-facilities="Tour guide, museum facilities and historical information.">
+
+                        <img src="img/Fort Alice.jpg" alt="fortalice">
+
+                        <h2>Fort Alice <span class="tooltip">(?)</span></h2>
+
+                        <p>Built out of heavy belian (ironwood) in 1864, this beautifully restored hilltop fort was built by the White Rajahs to guard against regional Iban rebellions and now acts as a local heritage museum.</p>
+
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!--Page 3: Booking-->
+    <div data-role="page" id="bookingPage">
+
+        <!--Header with Navbar-->
+        <div data-role="header">
+            <h1>Sarawak Amazing Tours</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#homePage"data-icon="home" data-transition="slide">Home</a></li>
+                    <li><a href="#tourpackagePage" data-icon="info" data-transition="slide">Tour Package</a></li>
+                    <li><a href="#bookingPage" class="ui-btn-active"data-icon="shop" data-transition="slide">Booking</a></li>
+                    <li><a href="#contactPage" data-icon="phone" data-transition="slide">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--COntent-->
+        <div role="main" class="ui-content">
+            <h2>Tour Package Booking</h2>
+            <p>Please fill the form below to make the booking~</p>
+
+            <form onsubmit="return booking()">
+                <label for="fullname">Full Name: </label>
+                <input type="text" name="fullname" id="fullname" placeholder="Enter your name">
+
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="bookingEmail" placeholder="Enter your email">
+
+                <label for="phone">Phone: </label>
+                <input type="tel" name="phone" id="phone" placeholder="Enter your phone number">
+
+                <label for="traveldate">Travel Date: </label>
+                <input type="date" name="traveldate" id="traveldate">
+
+                <label for="participants">Number of participants: </label>
+                <input type="number" name="participants" id="participants" placeholder="Enter the number of participants">
+
+                <label for="tourpackage">Tour Packages: </label>
+                <select id="tourpackage" name="tourpackage">
+                    <option value="">Select a Tour Package</option>
+                    <option value="Sarawak Cultural Village">Sarawak Cultural Village</option>
+                    <option value="Tropical Adventure Tours & Travel Sdn Bhd Miri">Tropical Adventure Tours & Travel Sdn Bhd Miri</option>
+                    <option value="Lamin Dana Cultural Centre">Lamin Dana Cultural Centre</option>
+                    <option value="Similajau National Park">Similajau National Park</option>
+                    <option value="Fairy Cave & Wind Cave">Fairy Cave & Wind Cave</option>
+                    <option value="Fort Alice">Fort Alice</option>
+                </select>
+
+                <input type="submit" value="Submit">
+            </form>
+
+            <!--Footer-->
+            <div data-role="footer" data-theme="b">
+                <h4>Sarawak Amazing Tours | &copy 2026</h4>
+            </div>
+        </div>
+    </div>
+
+    <!--Page 4: Contact Page-->
+    <div data-role="page" id="contactPage">
+
+        <!--Header with Navbar-->
+        <div data-role="header">
+            <h1>Sarawak Amazing Tours</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#homePage" data-icon="home" data-transition="slide">Home</a></li>
+                    <li><a href="#tourpackagePage" data-icon="info" data-transition="slide">Tour Package</a></li>
+                    <li><a href="#bookingPage" data-icon="shop" data-transition="slide">Booking</a></li>
+                    <li><a href="#contactPage" class="ui-btn-active" data-icon="phone" data-transition="slide">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Content-->
+        <div role="main" class="ui-content">
+            <h2>Contact Us</h2>
+
+            <p>Have any question? Contact us and don't be shy shy~</p>
+
+            <a href="#contactModal" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn"> Contact Us </a> 
+            <!--Modal--> 
+            <div data-role="popup" id="contactModal" data-dismissible="false"> 
+                <div data-role="header"> <h1>Contact Us</h1> </div>
+
+                <form id="contactForm" onsubmit="return names()">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+
+                    <label for="message">Message: </label>
+                    <textarea id="message" name="message"  placeholder="Enter your message"></textarea>
+
+                <!--Ethical Consent Checkbox-->
+                <label>
+                    <input type="checkbox" name="consent" id="consent" required>I agree to the use of my information to respond to my enquiry.
+                </label>
+
+                <input type="submit" value="Submit">
+            </form>
+            <a href="#" data-rel="back" class="ui-btn"> Close </a>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <div data-role="footer" data-theme="b">
+            <h4>Sarawak Amazing Tours | &copy 2026</h4>
+        </div>
+    </div>
+</body>
+</html>
