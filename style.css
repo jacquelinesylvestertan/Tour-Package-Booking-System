@@ -1,7 +1,6 @@
 .ui-content {
     text-align: center;
     padding: 20px;
-    text-shadow: none;
 }
 
 
@@ -53,7 +52,6 @@
 
 .ui-page .ui-header h1 {
     color: white;
-    text-shadow: none;
 }
 
 
@@ -65,7 +63,6 @@
 
 .ui-page .ui-footer h4 {
     color: white;
-    text-shadow: none;
 }
 
 
