@@ -172,7 +172,7 @@ $(document).on("pagecreate", "#tourpackagePage", function() {
             '<div data-role="popup" ' +
             'id="popup-' + short + '" ' +
             'data-short="' + short + '" ' +
-            'data-theme="none" ' +
+            'data-theme="a" ' +
             'data-overlay-theme="a" ' +
             'data-corners="false" ' +
             'data-tolerance="15">' +
